@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Positioning</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        div {
+            background-color: #5380fc;
+            /* position: static; */
+            /* position: initial; Same as position: static */
+            /* position: relative;
+                left: 150px; */
+            /* margin-left: 150px; */
+            /* width: 100%;
+                position: fixed;
+                top: 0px;
+                left: 0px; */
+            /* position: absolute; */
+            /* left: 50px; */
+            /* top: 0px; */
+            /* top: 10px; */
+            /* left: 20px; */
+            /* position: absolute; */
+            position: sticky;
+            top: 0px;
+            left: 50px;
+            width: 100%;
+        }
+        
+        nav {
+            border: 1px solid pink;
+            position: fixed;
+            bottom: 0px;
+            left: 20px;
+            width: 100px;
+            height: 150px;
+            background-color: #EFEFEF;
+            overflow: scroll;
+        }
+        
+        div>p {
+            margin: 0px;
+            color: red;
+        }
+        
+        header {
+            background-color: #5380fc;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+        }
+        
+        header+* {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a>aayush's Website</a>
+    </header>
+    <p>P1: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, corporis. Vel cumque assumenda dolorem quisquam, tempora ratione. Eius deleniti itaque, officia soluta, illum facere similique, sed quia dolore labore necessitatibus?</p>
+
+    <nav>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas commodi expedita itaque nostrum deleniti nobis minus impedit a pariatur, dignissimos aut dolor repellat fugit laudantium soluta sequi ex nam?</p>
+        <div>
+            <p>Chatbot</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum earum non, aspernatur eveniet illum minima vitae blanditiis eos saepe, reiciendis illo ad natus. Impedit excepturi repellendus itaque earum labore?</p>
+    </nav>
+    <p>P2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus blanditiis voluptas eius consectetur molestiae aut repudiandae minima, eligendi, voluptatibus pariatur, aliquid dolorum nesciunt fugiat suscipit saepe? Dolor illo consequatur architecto?</p>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./detail.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="header">
+        <div id="brand">
+            <h2>CryptoView</h2>
+        </div>
+        <div id="menu">
+            <span>Home</span>
+            <span>Profile</span>
+            <span>Projects</span>
+            <span>Resume</span>
+            <span>Contact</span>
+        </div>
+    </div>
+    <!--Price and decription container-->
+    <section class="description_price flex-container">
+        <!--Description container-->
+        <div class="description flex-container">
+            <img src="" id="coin-img" alt="CoinImg" />
+            <div class="w-40">
+                <h1 id="coin-name"></h1>
+                <p class="text-justify" id="coin-desc"></p>
+            </div>
+        </div>
+
+        <!--Price container-->
+        <div class="price">
+            <table class="mt_1_25">
+                <tbody>
+                    <tr>
+                        <td>INR</td>
+                        <td><span id="inr-price"> </span></td>
+                    </tr>
+                    <tr>
+                        <td>USD</td>
+                        <td><span id="usd-price"> </span></td>
+                    </tr>
+                    <tr>
+                        <td>EUR</td>
+                        <td><span id="eur-price"> </span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <br /><br /><br />
+    <!--Historical chart container-->
+    <section class="historical mt_2">
+        <canvas id="myChart"></canvas>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+body {
+    margin: 0px;
+    background-color: #EFEFEF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+span {
+    color: cornsilk;
+    margin-right: 50px;
+}
+
+#header {
+    background-color: black;
+    height: 70px;
+}
+
+#brand {
+    width: 40%;
+    float: left;
+    height: 70px;
+    text-align: center;
+    color: white;
+}
+#menu {
+    text-align: center;
+    width: 60%;
+    float: right;
+    height: 70px;
+    line-height: 70px;   
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main {
+    padding: 5rem;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    align-items: center;
+}
+
+.main>img {
+    width: 40%;
+}
+
+.trendingCoins {
+    background-color: #FFD36E;
+    background-color: #ffdd00;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.trendingCoins>.scroll_animation {
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    /*overflow-x: scroll;*/
+    animation-name: smooth_scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.trendingCoins .card {
+    padding: 0.5rem 2rem;
+    margin: 0px 5vw;
+    width: 8rem;
+    flex-shrink: 0;
+}
+
+.trendingCoins .card>img {
+    width: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.marginL {
+    margin-left: 1rem;
+}
+
+.features {
+    background-color: #FFFA4D;
+    background-color: #ffee99;
+    padding: 2rem;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+}
+
+.features>.card {
+    text-align: center;
+    padding: 1rem;
+    width: 40vw;
+}
+
+.card {
+    padding: 0.5rem;
+    height: 4rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer>h3 {
+    padding-top: 0.5;
+}
+
+@keyframes smooth_scroll {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
